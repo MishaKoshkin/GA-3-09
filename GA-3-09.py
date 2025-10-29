@@ -82,7 +82,6 @@ def generate_raw_text(keywords: str) -> str:
 def clean_and_parse_qwen_output(raw_text: str) -> dict:
     """
     Убирает промпт, парсит # заголовки.
-    ВАЖНО: Текст после #Вывод полностью сохраняется!
     """
     lines = raw_text.strip().split('\n')
     parsed = {
@@ -201,4 +200,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
